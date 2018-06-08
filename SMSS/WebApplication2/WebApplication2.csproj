@@ -68,30 +68,65 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="course.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="pick.aspx" />
+    <Content Include="resecret.aspx" />
+    <Content Include="severpc.aspx" />
     <Content Include="signup.aspx" />
+    <Content Include="sinfo.aspx" />
+    <Content Include="sreinfo.aspx" />
+    <Content Include="stumain.aspx" />
+    <Content Include="teaadd.aspx" />
+    <Content Include="teacancle.aspx" />
+    <Content Include="teacourse.aspx" />
+    <Content Include="teainfo.aspx" />
+    <Content Include="teamain.aspx" />
+    <Content Include="teapc.aspx" />
+    <Content Include="teareinfo.aspx" />
     <Content Include="Web.config" />
     <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alert.cs" />
+    <Compile Include="course.aspx.cs">
+      <DependentUpon>course.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="course.aspx.designer.cs">
+      <DependentUpon>course.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="pick.aspx.cs">
+      <DependentUpon>pick.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pick.aspx.designer.cs">
+      <DependentUpon>pick.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="resecret.aspx.cs">
+      <DependentUpon>resecret.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resecret.aspx.designer.cs">
+      <DependentUpon>resecret.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="severpc.aspx.cs">
+      <DependentUpon>severpc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="severpc.aspx.designer.cs">
+      <DependentUpon>severpc.aspx</DependentUpon>
+    </Compile>
     <Compile Include="signup.aspx.cs">
       <DependentUpon>signup.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="signup.aspx.designer.cs">
       <DependentUpon>signup.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -100,10 +135,95 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="sinfo.aspx.cs">
+      <DependentUpon>sinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sinfo.aspx.designer.cs">
+      <DependentUpon>sinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sreinfo.aspx.cs">
+      <DependentUpon>sreinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sreinfo.aspx.designer.cs">
+      <DependentUpon>sreinfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentM.Master.cs">
+      <DependentUpon>StudentM.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentM.Master.designer.cs">
+      <DependentUpon>StudentM.Master</DependentUpon>
+    </Compile>
+    <Compile Include="stumain.aspx.cs">
+      <DependentUpon>stumain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stumain.aspx.designer.cs">
+      <DependentUpon>stumain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teaadd.aspx.cs">
+      <DependentUpon>teaadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teaadd.aspx.designer.cs">
+      <DependentUpon>teaadd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teacancle.aspx.cs">
+      <DependentUpon>teacancle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacancle.aspx.designer.cs">
+      <DependentUpon>teacancle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherT.Master.cs">
+      <DependentUpon>TeacherT.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TeacherT.Master.designer.cs">
+      <DependentUpon>TeacherT.Master</DependentUpon>
+    </Compile>
+    <Compile Include="teacourse.aspx.cs">
+      <DependentUpon>teacourse.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacourse.aspx.designer.cs">
+      <DependentUpon>teacourse.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teainfo.aspx.cs">
+      <DependentUpon>teainfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teainfo.aspx.designer.cs">
+      <DependentUpon>teainfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teamain.aspx.cs">
+      <DependentUpon>teamain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teamain.aspx.designer.cs">
+      <DependentUpon>teamain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teapc.aspx.cs">
+      <DependentUpon>teapc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teapc.aspx.designer.cs">
+      <DependentUpon>teapc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teareinfo.aspx.cs">
+      <DependentUpon>teareinfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teareinfo.aspx.designer.cs">
+      <DependentUpon>teareinfo.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <Content Include="Site1.Master" />
+    <Content Include="StudentM.Master" />
+    <Content Include="TeacherT.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -128,9 +248,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>2306</DevelopmentServerPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:2306/</IISUrl>
+          <IISUrl>http://localhost:3730/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

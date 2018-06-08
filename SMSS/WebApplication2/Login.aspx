@@ -66,7 +66,7 @@
                <tr><td class="auto-style8" colspan="2" >
                    <asp:Panel ID="Panel2" runat="server" HorizontalAlign="Center">
                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatDirection="Horizontal" RepeatLayout="Flow">
-                            <asp:ListItem Value="1">学生登陆</asp:ListItem>
+                            <asp:ListItem Value="1" Selected="True">学生登陆</asp:ListItem>
                           <asp:ListItem Value="2">教师登陆</asp:ListItem>
                        </asp:RadioButtonList>
                    </asp:Panel>

@@ -14,7 +14,7 @@ namespace WebApplication2
         private string constr = "server=118.25.74.182; Initial Catalog = Studb; Persist Security Info = True; User ID = sa; Password = Lizhiyang1()";
         protected void Page_Load(object sender, EventArgs e)
         {
-            this.RadioButtonList1.Items[0].Selected = true;
+            //this.RadioButtonList1.Items[0].Selected = true;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -24,22 +24,32 @@ namespace WebApplication2
             //Response.Write("打开成功" + conn.State);
             int role = 0;
      
-            if (Int32.Parse(RadioButtonList1.SelectedItem.Value) == 2) {
+            if (RadioButtonList1.Items[1].Selected == true) {
                 role = 1;
+               
             }   
-            String sql = "select userid from [user] where userid='" + userid.Text + "'and pwd ='"+pwd.Text+"'and role="+role+ "and deletestatus = 0";
+            String sql = "select userid , snum from [user] where userid='" + userid.Text + "'and pwd ='"+pwd.Text+"'and role="+role+ "and deletestatus = 0";
             SqlCommand cmd = new SqlCommand(sql, conn);
             //DataTable dt = new DataTable();
             //da.Fill(dt);
             SqlDataReader sdr = cmd.ExecuteReader();
             //string userr = dt.Rows[0][0].ToString();
-           /* if (sdr.Read())
+            if (sdr.Read())
             {
-                Response.Write("登陆成功" + sdr["userid"]);
+                if (role == 0)
+                {
+                    Session["snum"] = sdr["snum"];
+                    Session["UserID"] = userid.Text.Trim();
+                    Response.Redirect("stumain.aspx");
+                }
+                else {
+                    Session["TUserID"] = userid.Text.Trim();
+                    Response.Redirect("teamain.aspx");
+                }
             }
             else {
-                Response.Write("111");
-            }*/
+                ClientScript.RegisterStartupScript(typeof(string), "print", "<script>alert('" + "账号密码错误请重新输入" + "');window.location.href ='Login.aspx'</script>");
+            }
 
                 conn.Close();
         }
