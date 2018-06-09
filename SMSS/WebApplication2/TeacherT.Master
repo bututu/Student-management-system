@@ -36,6 +36,7 @@
                         <asp:MenuItem Text="学生课程查询" Value="课程查询"></asp:MenuItem>
                         <asp:MenuItem Text="学生选课查询" Value="学生选课查询"></asp:MenuItem>
                         <asp:MenuItem Text="学生选课修改" Value="学生选课信息修改"></asp:MenuItem>
+                        <asp:MenuItem Text="学生课程添加" Value="学生课程添加"></asp:MenuItem>
                     </asp:MenuItem>
                   
                 </Items>

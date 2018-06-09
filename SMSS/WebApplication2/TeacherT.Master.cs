@@ -54,6 +54,10 @@ namespace WebApplication2
             {
                 Response.Redirect("teacancle.aspx");
             }
+            else if (e.Item.Value == "学生课程添加")
+            {
+                Response.Redirect("teacouadd.aspx");
+            }
         }
 
         protected void button1_click(object sender, EventArgs e)

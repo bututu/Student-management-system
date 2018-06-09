@@ -79,6 +79,7 @@
     <Content Include="stumain.aspx" />
     <Content Include="teaadd.aspx" />
     <Content Include="teacancle.aspx" />
+    <Content Include="teacouadd.aspx" />
     <Content Include="teacourse.aspx" />
     <Content Include="teainfo.aspx" />
     <Content Include="teamain.aspx" />
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="TeacherT.Master.designer.cs">
       <DependentUpon>TeacherT.Master</DependentUpon>
+    </Compile>
+    <Compile Include="teacouadd.aspx.cs">
+      <DependentUpon>teacouadd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teacouadd.aspx.designer.cs">
+      <DependentUpon>teacouadd.aspx</DependentUpon>
     </Compile>
     <Compile Include="teacourse.aspx.cs">
       <DependentUpon>teacourse.aspx</DependentUpon>

@@ -33,7 +33,7 @@
     </asp:Panel>
 
       <asp:Panel ID="Panel5" runat="server" Height="30px">
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="确认插入" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="确认添加" />
         </asp:Panel>
      
 </asp:Content>
