@@ -52,7 +52,7 @@ namespace WebApplication2
             DataSet ds = new DataSet();
             string snum = TextBox1.Text.Trim();
             ds = GetResult();
-            if (ds.Tables[0] != null)
+            if (ds.Tables[0].Rows.Count != 0)
             {
                 GridView1.DataSource = ds.Tables[0].DefaultView;
                 GridView1.DataBind();
@@ -60,6 +60,10 @@ namespace WebApplication2
                 Panel8.Visible = true;
 
 
+            }
+            else
+            {
+                ClientScript.RegisterStartupScript(typeof(string), "print", "<script>alert('" + "学号不存在" + "');window.location.href ='teacancle.aspx'</script>");
             }
         }
     }

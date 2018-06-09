@@ -15,7 +15,9 @@ namespace WebApplication2
 
         public DataSet GetResult()
         {
+            if (Session["snum"] != null) {
             string snum = Session["snum"].ToString();
+            }
 
             string sql = "select counum 课程编号,couname 课程名字,couteacher 任课老师,info 课程介绍  from [course] ";
 

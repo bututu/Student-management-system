@@ -19,9 +19,14 @@ namespace WebApplication2
             GridView1.DataSource = ds.Tables[0].DefaultView;
             GridView1.DataBind();
         }
+   
         public DataSet GetResult()
         {
-            string snum = Session["snum"].ToString();
+            string snum = "";
+            if (Session["snum"] != null)
+            {
+                snum = Session["snum"].ToString();
+            }
 
             string sql = "select counum 课程编号,couname 课程名字 from [course] ";
 
@@ -38,7 +43,12 @@ namespace WebApplication2
         protected void Button1_Click(object sender, EventArgs e)
         {
             string counum=coulist.SelectedItem.Text;
-            string snum = Session["snum"].ToString();
+            string snum = "";
+            if (Session["snum"] != null)
+            {
+              snum = Session["snum"].ToString();
+            }
+
             SqlConnection conn = new SqlConnection(constr);
             int confirm = 0;
             conn.Open();

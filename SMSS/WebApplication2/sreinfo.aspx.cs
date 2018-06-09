@@ -33,7 +33,11 @@ namespace WebApplication2
                 confirm = 1;
             }
 
-            string snum = Session["snum"].ToString();
+            string snum = "";
+            if (Session["snum"] != null)
+            {
+                snum = Session["snum"].ToString();
+            }
             //string snum = "201511";
             string createtime = DateTime.Now.ToString();
             string name = sname.Text;  //学生姓名

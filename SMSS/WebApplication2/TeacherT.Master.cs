@@ -13,11 +13,12 @@ namespace WebApplication2
         {
             if (Session["TUserID"] == null || Session["TUserID"].ToString() == "")
             {
-                this.Page.ClientScript.RegisterStartupScript(typeof(string), "print", "<script>alert('" + "请先登录" + "');window.location.href ='Login.aspx'</script>");
+              //  this.Page.ClientScript.RegisterStartupScript(typeof(string), "print", "<script>alert('" + "请先登录" + "');window.location.href ='Login.aspx'</script>");
+                Response.Write("<script>alert('" + "请先登录" + "');window.location.href ='Login.aspx'</script>");
             }
 
         }
-
+     
         protected void Menu1_MenuItemClick1(object sender, MenuEventArgs e)
         {
             if (e.Item.Value == "首页")

@@ -38,9 +38,15 @@ namespace WebApplication2
         {
 
             DataSet ds = new DataSet();
+            SqlConnection conn = new SqlConnection(constr);
+            int confirm = 0;
             string snum = TextBox1.Text.Trim();
             ds = GetResult();
-            if (ds.Tables[0].DefaultView != null)
+            if (ds.Tables[0].Rows.Count!=0)
+            {
+                confirm = 1;
+            }
+            if (confirm==1)
             {
                 GridView1.DataSource = ds.Tables[0].DefaultView;
                 GridView1.DataBind();

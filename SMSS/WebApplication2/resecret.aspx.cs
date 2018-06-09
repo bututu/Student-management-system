@@ -19,7 +19,12 @@ namespace WebApplication2
         protected void Button1_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(constr);
-            string userid = Session["UserID"].ToString();
+            string userid = "";
+            if (Session["UserID"] != null)
+            {
+                userid = Session["UserID"].ToString();
+            }
+          //  string userid = Session["UserID"].ToString();
             int confirm = 0;
             if (TextBox1.Text.Trim() == "")
             {

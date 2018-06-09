@@ -14,7 +14,11 @@ namespace WebApplication2
         private string constr = "server=118.25.74.182; Initial Catalog = Studb; Persist Security Info = True; User ID = sa; Password = Lizhiyang1()";
         public DataSet GetResult()
         {
-            string snum = Session["snum"].ToString();
+            string snum = "";
+            if (Session["snum"] != null)
+            {
+                snum = Session["snum"].ToString();
+            }
 
             string sql = "select snum 学号,couname 课程名称,couteacher 任课老师,info 课程介绍 from [pick],[course] where snum='" + snum + "' and [pick].counum=[course].counum";
 

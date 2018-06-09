@@ -15,8 +15,12 @@ namespace WebApplication2
 
         public DataSet GetResult()
         {
-            string snum=Session["snum"].ToString();
-     
+            string snum = "";
+            if (Session["snum"] != null)
+            {
+                snum = Session["snum"].ToString();
+            }
+
             string sql= "select sname 姓名,snum 学号,ssex 性别,sbirth 出生日期,dname 专业名称 from [stu],[specialitie] where snum='"+snum+ "' and [stu].dnum=[specialitie].dnum";
 
             SqlConnection conn = new SqlConnection(constr);

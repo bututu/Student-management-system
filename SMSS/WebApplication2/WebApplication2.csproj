@@ -83,6 +83,7 @@
     <Content Include="teainfo.aspx" />
     <Content Include="teamain.aspx" />
     <Content Include="teapc.aspx" />
+    <Content Include="teapick.aspx" />
     <Content Include="teareinfo.aspx" />
     <Content Include="Web.config" />
     <Content Include="Login.aspx" />
@@ -211,6 +212,13 @@
     </Compile>
     <Compile Include="teapc.aspx.designer.cs">
       <DependentUpon>teapc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="teapick.aspx.cs">
+      <DependentUpon>teapick.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="teapick.aspx.designer.cs">
+      <DependentUpon>teapick.aspx</DependentUpon>
     </Compile>
     <Compile Include="teareinfo.aspx.cs">
       <DependentUpon>teareinfo.aspx</DependentUpon>
