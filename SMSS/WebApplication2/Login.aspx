@@ -57,7 +57,6 @@
                 <asp:Panel ID="Panel1" runat="server" HorizontalAlign="Center">
                     <asp:Button ID="Button1" runat="server" Text="登陆" Height="30px" OnClick="Button1_Click" />
                     <asp:Button ID="Button2" runat="server" Text="注册" Height="30px" OnClick="Button2_Click"/>
-                    <asp:Button ID="Button3" runat="server" Text="忘记密码" Height="30px" />
 
                     </asp:Panel>
             </td>
